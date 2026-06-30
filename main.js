@@ -32,7 +32,7 @@ controls.enableZoom = false;
 let productGroup = null;
 const loader = new GLTFLoader();
 
-loader.load('./product.glb', (gltf) => {
+loader.load('/my-3d-website/product.glb', (gltf) => {
   productGroup = gltf.scene;
   productGroup.scale.set(0.15, 0.15, 0.15);
   
