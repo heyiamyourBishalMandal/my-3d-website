@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Scroll Blast</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="m-0 overflow-x-hidden bg-slate-950 text-white">
+    
+    <!-- 3D Canvas fixed in the background -->
+    <canvas id="webgl-canvas" class="fixed inset-0 -z-10 h-full w-full"></canvas>
+
+    <!-- Scrollable UI Overlay -->
+    <div id="scroll-sections" class="relative z-10">
+      
+      <!-- Section 1 -->
+      <section class="pointer-events-none flex h-screen items-center p-8 md:p-24">
+        <div class="max-w-xl">
+          <h1 class="text-6xl font-black uppercase tracking-tight text-blue-500">The Epicenter</h1>
+          <p class="mt-4 text-lg text-gray-400">Welcome to the core. Scroll down to trigger the kinetic disassembly sequence.</p>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="pointer-events-none flex h-screen items-center justify-end p-8 md:p-24">
+        <div class="max-w-xl">
+          <h1 class="text-6xl font-black uppercase tracking-tight text-purple-500">Slow Blast</h1>
+          <p class="mt-4 text-lg text-gray-400">Internal components are pushed outward along their local vectors in real-time mapping.</p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="pointer-events-none flex h-screen items-center p-8 md:p-24">
+        <div class="max-w-xl">
+          <h1 class="text-6xl font-black uppercase tracking-tight text-emerald-500">Complete Explosion</h1>
+          <p class="mt-4 text-lg text-gray-400">Scroll back up to reverse the physics engine and cleanly reassemble the structure.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
